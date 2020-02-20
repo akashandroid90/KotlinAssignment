@@ -23,9 +23,10 @@ import java.net.HttpURLConnection
 @ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
 class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
-    private val mockWebServer = MockWebServer()
+    private lateinit var mockWebServer: MockWebServer
     @Before
     fun setUp() {
+        mockWebServer = MockWebServer()
         mockWebServer.start()
         Dispatchers.setMain(TestCoroutineDispatcher())
         val networkModule = NetworkModule()
@@ -50,7 +51,7 @@ class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
             mockWebServer.enqueue(
                 MockResponse.createMockResponse(
                     "api_response_fail",
-                    HttpURLConnection.HTTP_OK
+                    HttpURLConnection.HTTP_BAD_REQUEST
                 )
             )
             viewModel?.loadData()?.join()

@@ -353,6 +353,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Maruti/subscribe/app/src/test/java/com/msil/sharedmobility/subscribe/base/BaseUnitTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
