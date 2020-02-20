@@ -55,7 +55,7 @@ dependencies {
     // Databinding collection adapter
     implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:' + binding_collection_adapter_version
     implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:' + binding_collection_adapter_version
-    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-paging:' + binding_collection_adapter_version
+//    implementation 'me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-paging:' + binding_collection_adapter_version
     // retrofit
     implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
     implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_Logging_Version"

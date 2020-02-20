@@ -1,36 +1,34 @@
 package app.kotlinassignment.ui.home
 
-import app.kotlinassignment.MyApplication
 import app.kotlinassignment.base.BaseUnitTest
 import app.kotlinassignment.di.module.ApiModule
 import app.kotlinassignment.di.module.ApiRepoModule
-import app.kotlinassignment.di.module.AppModule
 import app.kotlinassignment.di.module.NetworkModule
 import app.kotlinassignment.utils.MockResponse
-import lib.apidata.data.ItemData
-import me.tatarka.bindingcollectionadapter2.ItemBinding
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.ExperimentalCoroutinesApi
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.test.TestCoroutineDispatcher
+import kotlinx.coroutines.test.resetMain
+import kotlinx.coroutines.test.setMain
 import okhttp3.mockwebserver.MockWebServer
+import org.junit.After
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.JUnit4
-import org.mockito.ArgumentMatchers.anyInt
-import org.mockito.Mockito.`when`
-import org.mockito.Mockito.mock
 import java.net.HttpURLConnection
 
+@ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
 class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
     private val mockWebServer = MockWebServer()
     @Before
     fun setUp() {
         mockWebServer.start()
+        Dispatchers.setMain(TestCoroutineDispatcher())
         val networkModule = NetworkModule()
-        val appModule = AppModule(mock(MyApplication::class.java))
-        val itemBinding: ItemBinding<ItemData> =
-            mock(ItemBinding::class.java) as ItemBinding<ItemData>
-        `when`(ItemBinding.of<ItemData>(anyInt(), anyInt())).thenReturn(itemBinding)
         viewModel = HomeViewModel(
             ApiRepoModule().provideHomeRepoImpl(
                 ApiModule().provideHomeApi(networkModule.provideRetrofitInterface(networkModule.providesOkHttpClient()))
@@ -38,23 +36,44 @@ class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
         )
     }
 
-    @Before
+    @After
     fun tearDown() {
         mockWebServer.shutdown()
+        Dispatchers.resetMain()
+    }
+
+    @Test
+    fun testLoadDataFail() {
+        runBlocking {
+            Assert.assertNotNull(viewModel)
+//            viewModel?.items?.clear()
+            mockWebServer.enqueue(
+                MockResponse.createMockResponse(
+                    "api_response_fail",
+                    HttpURLConnection.HTTP_OK
+                )
+            )
+            viewModel?.loadData()?.join()
+            viewModel?.items?.isEmpty()?.let {
+                Assert.assertTrue(it)
+            }
+        }
     }
 
     @Test
     fun testLoadDataSuccess() {
-        Assert.assertNotNull(viewModel)
-        mockWebServer.enqueue(
-            MockResponse.createMockResponse(
-                "api_response_success",
-                HttpURLConnection.HTTP_OK
+        runBlocking {
+            Assert.assertNotNull(viewModel)
+            mockWebServer.enqueue(
+                MockResponse.createMockResponse(
+                    "api_response_success",
+                    HttpURLConnection.HTTP_OK
+                )
             )
-        )
-        viewModel?.loadData()
-        viewModel?.items?.isNotEmpty()?.let {
-            Assert.assertTrue(it)
+            viewModel?.loadData()?.join()
+            viewModel?.items?.isNotEmpty()?.let {
+                Assert.assertTrue(it)
+            }
         }
     }
 }

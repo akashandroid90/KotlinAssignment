@@ -333,6 +333,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/test/resources/mock_response/api_response_fail">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/test/resources/mock_response/verify_mobile_otp_change_number_success">
           <value>
             <set />
