@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="app.kotlinassignment.ui.home.HomeViewModel" />
+
+        <variable
+            name="data"
+            type="lib.apidata.data.ItemData" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{()->viewModel.showData(data)}"
+        android:padding="@dimen/_5sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_id_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_id"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/user_id_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxLines="1"
+            android:text="@{data.userId}"
+            app:layout_constraintStart_toEndOf="@id/user_id_label"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/user_id" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/user_id_label" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@{data.title}"
+            app:layout_constraintStart_toEndOf="@id/title_label"
+            app:layout_constraintTop_toTopOf="@id/title_label"
+            tools:text="@string/title" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/completed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/completed"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_value" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/completed_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@{String.valueOf(data.completed)}"
+            android:textColor="@{data.completed? @android:color/holo_green_dark : @android:color/holo_red_dark}"
+            app:layout_constraintStart_toEndOf="@id/completed_label"
+            app:layout_constraintTop_toTopOf="@id/completed_label"
+            tools:text="@string/completed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
