@@ -4,13 +4,12 @@ import app.kotlinassignment.BuildConfig
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
-import okhttp3.Dispatcher
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
+import javax.inject.Named
 import javax.inject.Singleton
 
 
@@ -26,13 +25,13 @@ class NetworkModule {
             .connectTimeout(30, TimeUnit.SECONDS)
             .readTimeout(30, TimeUnit.SECONDS)
             .writeTimeout(30, TimeUnit.SECONDS)
-            .addInterceptor { chain ->
-                val original = chain.request()
-                val request = original.newBuilder()
-                    .method(original.method(), original.body())
-                    .build()
-                chain.proceed(request)
-            }.dispatcher(Dispatcher(Executors.newSingleThreadExecutor()))
+//            .addInterceptor { chain ->
+//                val original = chain.request()
+//                val request = original.newBuilder()
+//                    .method(original.method(), original.body())
+//                    .build()
+//                chain.proceed(request)
+//            }.dispatcher(Dispatcher(Executors.newSingleThreadExecutor()))
         if (BuildConfig.DEBUG) {
             val logging = HttpLoggingInterceptor()
             logging.level = HttpLoggingInterceptor.Level.BODY
@@ -43,9 +42,16 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun provideRetrofitInterface(okHttpClient: OkHttpClient): Retrofit {
+    @Named("baseUrl")
+    fun provideBaseUrl(): String {
+        return BuildConfig.BASE_URL
+    }
+
+    @Provides
+    @Singleton
+    fun provideRetrofitInterface(@Named("baseUrl") url: String, okHttpClient: OkHttpClient): Retrofit {
         return Retrofit.Builder()
-            .baseUrl(BuildConfig.BASE_URL)
+            .baseUrl(url)
             .addConverterFactory(GsonConverterFactory.create(GsonBuilder().setLenient().create()))
             .client(okHttpClient)
             .build()

@@ -2,7 +2,6 @@ package app.kotlinassignment
 
 import android.app.Application
 import app.kotlinassignment.di.component.DaggerAppComponent
-import app.kotlinassignment.di.module.AppModule
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
@@ -18,6 +17,6 @@ class MyApplication : Application(), HasAndroidInjector {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerAppComponent.builder().appModule(AppModule(this)).build().inject(this)
+        DaggerAppComponent.builder().build().inject(this)
     }
 }

@@ -11,6 +11,7 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.test.TestCoroutineDispatcher
 import kotlinx.coroutines.test.resetMain
 import kotlinx.coroutines.test.setMain
+import lib.apidata.data.ItemData
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
 import org.junit.Assert
@@ -23,16 +24,21 @@ import java.net.HttpURLConnection
 @ExperimentalCoroutinesApi
 @RunWith(JUnit4::class)
 class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
-    private lateinit var mockWebServer: MockWebServer
+    private val mockWebServer = MockWebServer()
     @Before
     fun setUp() {
-        mockWebServer = MockWebServer()
         mockWebServer.start()
         Dispatchers.setMain(TestCoroutineDispatcher())
         val networkModule = NetworkModule()
         viewModel = HomeViewModel(
             ApiRepoModule().provideHomeRepoImpl(
-                ApiModule().provideHomeApi(networkModule.provideRetrofitInterface(networkModule.providesOkHttpClient()))
+                ApiModule().provideHomeApi(
+                    networkModule.provideRetrofitInterface(
+                        mockWebServer.url(
+                            "/"
+                        ).toString(), networkModule.providesOkHttpClient()
+                    )
+                )
             )
         )
     }
@@ -47,7 +53,6 @@ class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
     fun testLoadDataFail() {
         runBlocking {
             Assert.assertNotNull(viewModel)
-//            viewModel?.items?.clear()
             mockWebServer.enqueue(
                 MockResponse.createMockResponse(
                     "api_response_fail",
@@ -76,5 +81,21 @@ class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
                 Assert.assertTrue(it)
             }
         }
+    }
+
+    @Test
+    fun testShowDataSuccess() {
+        Assert.assertNotNull(viewModel)
+        val data = ItemData(1, 1.toString(), "User", false)
+        viewModel?.showData(data)
+        Assert.assertEquals(data, viewModel?.valueData?.value)
+    }
+
+    @Test
+    fun testShowDataFail() {
+        Assert.assertNotNull(viewModel)
+        val data = ItemData(1, 1.toString(), "User", false)
+        viewModel?.showData(data.copy(id = 2))
+        Assert.assertNotEquals(data, viewModel?.valueData?.value)
     }
 }

@@ -53,6 +53,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apidata/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apidata/src/main/java/lib/apidata/HomeData.kt">
           <value>
             <set />
@@ -93,6 +98,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apidomain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apidomain/src/main/java/lib/apidomain/HomeRepoImpl.kt">
           <value>
             <set />
@@ -113,6 +123,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apidomain/src/main/java/lib/apidomain/repository/HomeRepoImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/app.iml">
           <value>
             <set />
@@ -124,6 +139,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/app/kotlinassignment/DataBinderMapperImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/app/kotlinassignment/di/component/DaggerAppComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/app/kotlinassignment/di/module/NetworkModule_ProvideRetrofitInterfaceFactory.java">
           <value>
             <set />
           </value>

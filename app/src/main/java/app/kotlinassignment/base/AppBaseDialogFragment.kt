@@ -1,16 +1,15 @@
 package app.kotlinassignment.base
 
-import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.databinding.library.baseAdapters.BR
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelStoreOwner
-import com.google.android.material.bottomsheet.BottomSheetDialog
 import dagger.android.support.DaggerAppCompatDialogFragment
 import javax.inject.Inject
 
@@ -40,8 +39,13 @@ abstract class AppBaseDialogFragment<VB : ViewDataBinding, VM : BaseViewModel> :
         return viewBinding.root
     }
 
-    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        return BottomSheetDialog(context!!, theme)
+    override fun onStart() {
+        dialog?.let {
+            val layoutParams = it.window?.attributes
+            layoutParams?.width = WindowManager.LayoutParams.MATCH_PARENT
+            it.window?.attributes = layoutParams
+        }
+        super.onStart()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
