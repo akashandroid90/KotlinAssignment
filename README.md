@@ -2,4 +2,4 @@
 
 Sample application for kotlin using coroutine
 
-![Image](images/Screenshot_1582268665.png)
+![Image](images/screenshot.png)
