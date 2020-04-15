@@ -138,3 +138,5 @@ f
 6app/src/test/resources/mock_response/api_response_fail,b\8\b8220384c370dfe998735632329eb80aa24590e0
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+f
+6apidomain/src/main/java/lib/apidomain/AppExtensions.kt,e\4\e46eed109010a37e8f986833ecaa4851dade438d

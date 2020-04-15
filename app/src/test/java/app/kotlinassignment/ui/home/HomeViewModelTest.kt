@@ -74,8 +74,8 @@ class HomeViewModelTest : BaseUnitTest<HomeViewModel>() {
                 MockResponse.createMockResponse(
                     "api_response_success",
                     HttpURLConnection.HTTP_OK
+
                 )
-            )
             viewModel?.loadData()?.join()
             viewModel?.items?.isNotEmpty()?.let {
                 Assert.assertTrue(it)
