@@ -5,8 +5,6 @@ s
 Capp/src/main/java/app/kotlinassignment/di/component/AppComponent.kt,2\e\2ec065fee2c3af15913e2d49013be15f59d2291d
 q
 Aapp/src/main/java/app/kotlinassignment/di/module/NetworkModule.kt,1\6\1673ceae3e0f3bdaeb58499b541e701017337ac4
-l
-<app/src/main/java/app/kotlinassignment/di/module/DbModule.kt,5\4\5470e8021cfff2334feda6f4684cf9d36b06c9eb
 m
 =app/src/main/java/app/kotlinassignment/di/module/AppModule.kt,3\3\333a99a90384be509d9d31d8a70c683f797fa3c7
 g
@@ -75,14 +73,10 @@ w
 Gapp/src/test/java/app/kotlinassignment/ui/splash/SplashViewModelTest.kt,7\f\7ffa627c853f5feba974fde991c8f9e3a6d127e6
 s
 Capp/src/test/java/app/kotlinassignment/ui/home/HomeViewModelTest.kt,7\d\7d414c00cb83dc85492f2ab1edbcec16a627616c
-s
-Capidata/src/androidTest/java/lib/apidata/ExampleInstrumentedTest.kt,f\6\f60d83ce71924785dd3d99792841393db48f80a0
 W
 'apidata/src/main/res/values/strings.xml,c\a\cab983d520b1e934fafcf14d0031756c7264aa1a
 T
 $apidata/src/main/AndroidManifest.xml,3\f\3f2ac59ca7ad6e9c666033d6a3edabaa2f4cb26d
-d
-4apidata/src/test/java/lib/apidata/ExampleUnitTest.kt,5\e\5e2d0bc957da4699450986c1a05eb2813516402c
 B
 apidata/.gitignore,9\d\9d2497d0757106c4beac3e833e63b76e0b9420cc
 D
@@ -91,22 +85,16 @@ J
 apidata/consumer-rules.pro,a\9\a9520a3965fdb1feae1df220b412ea3d283ac47d
 J
 apidata/proguard-rules.pro,d\8\d8e6c95c001ba70d4edff21383afaa758a6d2ae3
-w
-Gapidomain/src/androidTest/java/lib/apidomain/ExampleInstrumentedTest.kt,7\c\7c5deefab257d216af81e815b7bdadf7b9a8d2b9
 Y
 )apidomain/src/main/res/values/strings.xml,e\6\e65493f808cef20701039df1d2014f5d6868e1fc
 V
 &apidomain/src/main/AndroidManifest.xml,0\2\0247de6980101283740edb8deee8233b8d3fe5db
-h
-8apidomain/src/test/java/lib/apidomain/ExampleUnitTest.kt,1\e\1ec306aa1495ef8d7d4b81d35171a92e07ab57e5
 D
 apidomain/.gitignore,e\d\ed47753f0f3174c9e6ff444c695f9389cfd83108
 L
 apidomain/consumer-rules.pro,2\0\2030f4a965adc541f749d0f310cf4b3d1013d9ec
 L
 apidomain/proguard-rules.pro,6\8\68436d078cf3ec774bdb6f716ff47c8e36f6be9e
-x
-Happ/src/androidTest/java/app/kotlinassignment/ExampleInstrumentedTest.kt,a\e\aeb8ac51a0e0cc2fcdaea2331ba838e1dfec77f0
 d
 4app/src/main/res/drawable/ic_launcher_background.xml,4\9\49845c622cb06d895975c7b1e3f943e320bce688
 h
@@ -131,8 +119,6 @@ T
 $.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
 L
 .idea/codeStyles/Project.xml,6\e\6ecd6000a7b6f4a2884412ff19f74193ed089648
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
@@ -150,3 +136,5 @@ i
 9app/src/test/resources/mock_response/api_response_success,2\6\26694e9a2475539a0a35ebb253a8ce4887753d1a
 f
 6app/src/test/resources/mock_response/api_response_fail,b\8\b8220384c370dfe998735632329eb80aa24590e0
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

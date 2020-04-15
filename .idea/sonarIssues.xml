@@ -18,6 +18,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.7.1/db807c28d9701cd5d1ab95ccf3ca0da251a0654b/retrofit-2.7.1-sources.jar!/retrofit2/KotlinExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e03183b85793c14140a03fa81f10f761/multidex-2.0.0/jars/classes.jar!/androidx/multidex/MultiDexApplication.class">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$USER_HOME$/Desktop/NewsSearcherV4-master/NewsSearcherV4-master/app/build.gradle">
           <value>
             <set />
@@ -39,6 +49,136 @@
           </value>
         </entry>
         <entry key="$USER_HOME$/Desktop/NewsSearcherV4-master/NewsSearcherV4-master/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/build/generated/source/kapt/debug/com/mediafileplayer/ui/list/musiclist/MusicFragmentPermissionsDispatcher.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/build/tmp/kapt3/stubs/debug/com/mediafileplayer/di/component/AppComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/build/tmp/kapt3/stubs/debug/com/mediafileplayer/ui/list/musiclist/MusicFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/AppApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/bean/DummyFileBean.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/di/component/AppComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/di/module/AppModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/di/module/PlayerModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/di/module/ViewModelModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/base/AppBaseActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/home/HomeActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/home/HomeViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/list/musiclist/MusicDiffUtil.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/list/musiclist/MusicFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/list/musiclist/MusicViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/player/musicplayer/MusicPlayerActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/java/com/mediafileplayer/ui/splash/SplashViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/res/layout/adapter_video_file.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/res/layout/fragment_music.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../../Library/Apps/mediafileplayer/settings.gradle">
           <value>
             <set />
           </value>
@@ -108,6 +248,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/apidomain/src/main/java/lib/apidomain/ApiError.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/apidomain/src/main/java/lib/apidomain/AppExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/apidomain/src/main/java/lib/apidomain/HomeRepoImpl.kt">
           <value>
             <set />
@@ -163,6 +313,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/AppExtensions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/HomeActivity.kt">
           <value>
             <set />
@@ -178,6 +333,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/base/AppBaseActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/base/AppBaseBottomSheetDialogFragment.kt">
           <value>
             <set />
@@ -189,6 +349,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/base/AppBaseFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/app/kotlinassignment/base/BaseViewModel.kt">
           <value>
             <set />
           </value>
@@ -374,6 +539,196 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/Clouds.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/Coordinates.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/ItemData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/MainData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/Sys.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/Weather.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/WeatherData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/data/Wind.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidata/src/main/java/lib/apidata/repository/HomeRepo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidomain/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidomain/src/main/java/lib/apidomain/network/HomeApi.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/apidomain/src/main/java/lib/apidomain/repository/HomeRepoImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/build/generated/source/buildConfig/debug/app/weatherapp/BuildConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/databinding/BindingAdapters.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/di/component/AppComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/di/module/ApiModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/di/module/ApiRepoModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/di/module/NetworkModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/ui/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/ui/home/HomeActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/ui/home/HomeViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/ui/splash/SplashViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/java/app/weatherapp/utils/CommonExtension.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/res/layout/activity_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/res/layout/adapter_weather.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/res/layout/include_current_weather.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/java/app/weatherapp/base/BaseUnitTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/java/app/weatherapp/ui/base/BaseUnitTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/java/app/weatherapp/ui/home/HomeViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/java/app/weatherapp/ui/splash/SplashViewModelTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/resources/mock_response/api_response_fail">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/app/src/test/resources/mock_response/api_response_success">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Coding Challenge/WeatherApp/settings.gradle">
           <value>
             <set />
           </value>

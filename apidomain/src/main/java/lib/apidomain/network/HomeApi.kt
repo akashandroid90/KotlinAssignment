@@ -11,4 +11,7 @@ import retrofit2.http.GET
 interface HomeApi {
     @GET("/todos")
     fun getListAsync(): Call<MutableList<ItemData>>
+
+    @GET("/todos")
+    fun getListAsyncAwait(): Call<ItemData>
 }

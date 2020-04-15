@@ -31,7 +31,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:' + android_version
     implementation 'androidx.core:core-ktx:' + core_ktx
     api project(path: ':apidata')
-
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:' + kotlinx_coroutines
     // Retrofit and Http request logger
     api "com.squareup.retrofit2:retrofit:$retrofit_version"
 }
